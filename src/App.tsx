@@ -9,7 +9,7 @@ function App() {
   const addTodo = (name: string) => {
     console.log(name);
     console.log(todos.length);
-    setTodos((val) => [{ id: todos.length + 1, name: name }, ...val]);
+    setTodos((val) => [{ id: Math.random(), name: name }, ...val]);
   };
   return (
     <div>
